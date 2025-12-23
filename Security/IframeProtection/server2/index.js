@@ -7,7 +7,7 @@ app.use((req, res, next) => {
     res.cookie('sessionID', '12345', {
         httpOnly: true,
         secure: true,
-        sameSite: 'strict',
+        sameSite: 'strict', 
       });
     next();
 })
